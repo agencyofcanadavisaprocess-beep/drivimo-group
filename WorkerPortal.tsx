@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { getDocs, query, where } from 'firebase/firestore';
-import { workersCollection } from '../firebase';
-import { WorkerDocument } from '../types';
+import { workersCollection } from './firebase';
+import { WorkerDocument } from './types';
 import { Search, FileCheck, Calendar, User, Eye, Download, Printer, ShieldCheck, AlertCircle, Landmark } from 'lucide-react';
 
 interface WorkerPortalProps {

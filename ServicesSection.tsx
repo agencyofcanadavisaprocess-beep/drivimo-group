@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Truck, Building2, Users, Leaf, Cpu, CheckCircle2, ArrowRight, ArrowLeft, MailOpen, Award, PlaneTakeoff } from 'lucide-react';
-import { servicesData } from '../data/services';
-import { Service } from '../types';
+import { servicesData } from './services';
+import { Service } from './types';
 
 interface ServicesSectionProps {
   setCurrentTab: (tab: string) => void;
