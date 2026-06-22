@@ -1,0 +1,6 @@
+{
+  "name": "Drivimo Group",
+  "description": "মাল্টি-ফাংশনাল কর্পোরেট ওয়েবসাইট এবং শ্রমিকদের জন্য ডকুমেন্ট সার্চ ও ভেরিফিকেশন পোর্টাল (ড্রিভিমো গ্রুপ অফ কোম্পানি)।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
