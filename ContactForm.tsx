@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { addDoc } from 'firebase/firestore';
-import { contactsCollection } from '../firebase';
-import { servicesData } from '../data/services';
+import { contactsCollection } from './firebase';
+import { servicesData } from './services';
 import { Phone, Mail, MapPin, Send, CheckCircle2, Clock } from 'lucide-react';
 
 interface ContactFormProps {

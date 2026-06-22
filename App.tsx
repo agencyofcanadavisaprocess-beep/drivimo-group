@@ -1,13 +1,14 @@
 import { useState } from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import CanadaSection from './components/CanadaSection';
-import ServicesSection from './components/ServicesSection';
-import WorkerPortal from './components/WorkerPortal';
-import ContactForm from './components/ContactForm';
-import AdminPanel from './components/AdminPanel';
+import { Analytics } from '@vercel/analytics/react';
+import Navbar from './Navbar';
+import Hero from './Hero';
+import CanadaSection from './CanadaSection';
+import ServicesSection from './ServicesSection';
+import WorkerPortal from './WorkerPortal';
+import ContactForm from './ContactForm';
+import AdminPanel from './AdminPanel';
 import { Landmark, FileSearch, ShieldCheck, Mail, ArrowRight, Award } from 'lucide-react';
-import bgImage from './assets/images/drivemo_bg_image_1782087471424.jpg';
+import bgImage from './drivemo_bg_image_1782087471424.jpg';
 
 export default function App() {
   const [currentTab, setCurrentTab] = useState('home');
@@ -232,6 +233,7 @@ export default function App() {
         </div>
       </footer>
       </div>
+      <Analytics />
     </div>
   );
 }

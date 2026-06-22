@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { getDocs, addDoc, deleteDoc, updateDoc, doc, query, orderBy } from 'firebase/firestore';
-import { workersCollection, contactsCollection, db } from '../firebase';
-import { WorkerDocument, ContactMessage } from '../types';
-import { servicesData } from '../data/services';
+import { workersCollection, contactsCollection, db } from './firebase';
+import { WorkerDocument, ContactMessage } from './types';
+import { servicesData } from './services';
 import { 
   Lock, KeyRound, ShieldAlert, FileText, Plus, PhoneCall, Trash2, 
   UploadCloud, Search, Calendar, FileCheck, Check, AlertCircle, RefreshCw 
@@ -292,7 +292,7 @@ export default function AdminPanel({ lang }: AdminPanelProps) {
             {loginError && (
               <div className="p-3 bg-rose-500/10 border border-rose-500/20 text-rose-400 rounded-xl text-xs flex items-center space-x-2">
                 <AlertCircle className="w-4 h-4 shrink-0" />
-                <span>{lang === 'bn' ? 'ভুল পাসকোড! অনুগ্রহ করে আবার চেষ্টা করুন।' : 'Incorrect PIN! Check details and retry.'}</span>
+                <span>{lang === 'bn' ? 'ভুল পাসকোড! অনুগ্রহ করে আবার চেষ্টা ��রুন।' : 'Incorrect PIN! Check details and retry.'}</span>
               </div>
             )}
 
